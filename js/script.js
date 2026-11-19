@@ -1,5 +1,3 @@
-// ---------- CALCULADORA ----------
-// Cuando se da clic en el botón, se calcula el costo
 const botonCalcular = document.getElementById("btn-calcular");
 
 botonCalcular.addEventListener("click", function () {
@@ -7,22 +5,22 @@ botonCalcular.addEventListener("click", function () {
   const precio = Number(document.getElementById("precio").value);
   const resultado = document.getElementById("resultado");
 
-  // Revisamos que los datos sean correctos
+
   if (paginas <= 0 || precio < 0) {
     resultado.textContent = "Datos incorrectos";
     return;
   }
 
   const total = paginas * precio;
-  // Se cambia el texto del elemento por su id
+
   resultado.textContent = "$" + total.toLocaleString("es-MX");
 });
 
-// ---------- FORMULARIO DE CONTACTO ----------
+
 const formulario = document.getElementById("formulario-contacto");
 
 formulario.addEventListener("submit", function (evento) {
-  evento.preventDefault(); // para que no se recargue la página
+  evento.preventDefault(); 
 
   const nombre = document.getElementById("nombre").value;
   const correo = document.getElementById("correo").value;
