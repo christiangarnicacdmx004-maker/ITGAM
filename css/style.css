@@ -1,0 +1,180 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1f3a5f;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background-color: #2d5b94;
+  color: white;
+  text-align: center;
+  padding: 160px 20px 100px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* Botones */
+.boton {
+  background-color: #f0a500;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.boton:hover {
+  background-color: #d18f00;
+}
+
+/* Secciones */
+.seccion {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.seccion h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.gris {
+  background-color: #eeeeee;
+}
+
+/* Cajas en fila */
+.fila {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.caja {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 220px;
+}
+
+.caja i {
+  font-size: 40px;
+  color: #2d5b94;
+}
+
+.caja h3 {
+  margin: 10px 0;
+}
+
+.numero {
+  font-size: 40px;
+  color: #2d5b94;
+}
+
+/* Formularios */
+.formulario {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999;
+  font-size: 16px;
+}
+
+.formulario button {
+  margin-top: 20px;
+}
+
+.formulario p {
+  margin-top: 15px;
+}
+
+#resultado {
+  font-size: 24px;
+  color: #2d5b94;
+}
+
+/* Footer */
+.footer {
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.footer i {
+  font-size: 22px;
+  margin: 0 8px;
+}
+
+/* Para celulares */
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+  }
+  .navbar nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .caja {
+    width: 100%;
+  }
+}

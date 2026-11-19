@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GarnicaSoft - Desarrollo de Software</title>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Mi CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h2 class="logo"><i class="bi bi-code-slash"></i> GarnicaSoft</h2>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#estadisticas">Estadísticas</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <h1 id="hero-titulo">Desarrollamos software para tu empresa</h1>
+    <p id="hero-texto">Creamos páginas web, aplicaciones y sistemas a la medida.</p>
+    <a id="hero-boton" href="#contacto" class="boton">Contáctanos</a>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="seccion">
+    <h2>Servicios</h2>
+    <div class="fila">
+      <div class="caja servicio">
+        <i class="bi bi-globe"></i>
+        <h3>Páginas web</h3>
+        <p>Sitios web para negocios, escuelas y personas.</p>
+      </div>
+      <div class="caja servicio">
+        <i class="bi bi-phone"></i>
+        <h3>Apps móviles</h3>
+        <p>Aplicaciones para celular fáciles de usar.</p>
+      </div>
+      <div class="caja servicio">
+        <i class="bi bi-database"></i>
+        <h3>Bases de datos</h3>
+        <p>Guardamos y organizamos la información de tu empresa.</p>
+      </div>
+      <div class="caja servicio">
+        <i class="bi bi-tools"></i>
+        <h3>Mantenimiento</h3>
+        <p>Corregimos errores y mejoramos tu sistema.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECNOLOGIAS -->
+  <section id="tecnologias" class="seccion gris">
+    <h2>Tecnologías utilizadas</h2>
+    <div class="fila">
+      <div class="caja tecnologia"><i class="bi bi-filetype-html"></i><p>HTML</p></div>
+      <div class="caja tecnologia"><i class="bi bi-filetype-css"></i><p>CSS</p></div>
+      <div class="caja tecnologia"><i class="bi bi-filetype-js"></i><p>JavaScript</p></div>
+      <div class="caja tecnologia"><i class="bi bi-filetype-py"></i><p>Python</p></div>
+      <div class="caja tecnologia"><i class="bi bi-github"></i><p>GitHub</p></div>
+    </div>
+  </section>
+
+  <!-- ESTADISTICAS -->
+  <section id="estadisticas" class="seccion">
+    <h2>Estadísticas</h2>
+    <div class="fila">
+      <div class="caja">
+        <h3 class="numero" data-numero="120">0</h3>
+        <p>Proyectos terminados</p>
+      </div>
+      <div class="caja">
+        <h3 class="numero" data-numero="85">0</h3>
+        <p>Clientes</p>
+      </div>
+      <div class="caja">
+        <h3 class="numero" data-numero="8">0</h3>
+        <p>Años de experiencia</p>
+      </div>
+      <div class="caja">
+        <h3 class="numero" data-numero="24">0</h3>
+        <p>Programadores</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="seccion gris">
+    <h2>Proyectos</h2>
+    <div class="fila">
+      <div class="caja proyecto">
+        <i class="bi bi-controller"></i>
+        <h3>Biblioteca de videojuegos</h3>
+        <p>API hecha con FastAPI y PostgreSQL.</p>
+      </div>
+      <div class="caja proyecto">
+        <i class="bi bi-cart"></i>
+        <h3>Tienda en línea</h3>
+        <p>Catálogo de productos y carrito de compras.</p>
+      </div>
+      <div class="caja proyecto">
+        <i class="bi bi-bar-chart"></i>
+        <h3>Reporte de ventas</h3>
+        <p>Pantalla con gráficas de las ventas del mes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULADORA -->
+  <section id="calculadora" class="seccion">
+    <h2>Calculadora de costo</h2>
+    <div class="formulario">
+      <label for="paginas">Cantidad de páginas:</label>
+      <input type="number" id="paginas" value="5">
+
+      <label for="precio">Precio por página ($):</label>
+      <input type="number" id="precio" value="800">
+
+      <button id="btn-calcular" class="boton">Calcular</button>
+
+      <p>Costo estimado: <strong id="resultado">$4,000</strong></p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="seccion gris">
+    <h2>Contacto</h2>
+    <form class="formulario" id="formulario-contacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre">
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo">
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" rows="4"></textarea>
+
+      <button type="submit" class="boton">Enviar</button>
+      <p id="mensaje-formulario"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 GarnicaSoft - Empresa ficticia para una tarea de Desarrollo Web</p>
+    <p>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-linkedin"></i>
+      <i class="bi bi-instagram"></i>
+    </p>
+  </footer>
+
+  <!-- GSAP y mi JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
